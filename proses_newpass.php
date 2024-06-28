@@ -5,7 +5,7 @@ include "koneksi.php";
 
 $email      = $_POST['email'];
 $password   = $_POST['password'];
-
+$konfirmasi = $_POST['konfirmasi'];
 
 if ($password != $konfirmasi) :
     header('location:newpass.php?email='.$email.'&error=pass');
